@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user registration</title>
+</head>
+<body>
+<form action="{{url_for('register')}}" method="get">
+    <input type="text" name="username" placeholder="enter username" required><br/>
+    <input type="password" name="password" placeholder="enter password" required><br/>
+    <input type="password" name="repassword" placeholder="enter re-password"><br/>
+    <input type="text" name="mobnum"  pattern="(6|7|8|9){1}[0-9]{9}">
+    <input type="email" name="email" required>
+    <input type="submit" value="login">
+    <input type="reset" value="cancel">
+</form>
+</body>
+</html>
